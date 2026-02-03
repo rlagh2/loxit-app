@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loxit - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: #0D0D0F;
+            color: #FFFFFF;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+        }
+        
+        .app-name {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .page-title {
+            font-size: 18px;
+            color: #8E8E93;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #FFFFFF;
+        }
+        
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+        
+        p {
+            color: #EBEBF5;
+            margin-bottom: 16px;
+        }
+        
+        ol, ul {
+            color: #EBEBF5;
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .faq-item {
+            background: #1C1C1E;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .faq-question::before {
+            content: "Q";
+            background: #007AFF;
+            color: #FFFFFF;
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        
+        .faq-answer {
+            color: #EBEBF5;
+            padding-left: 36px;
+        }
+        
+        .setup-card {
+            background: #1C1C1E;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .setup-card h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .setup-icon {
+            width: 32px;
+            height: 32px;
+            background: #007AFF;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .setup-card ol {
+            margin-bottom: 0;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #1C1C1E 0%, #2C2C2E 100%);
+            border: 1px solid #3A3A3C;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .contact-box h2 {
+            margin-top: 0;
+        }
+        
+        .contact-email {
+            display: inline-block;
+            background: #007AFF;
+            color: #FFFFFF;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 8px;
+            transition: background 0.2s;
+        }
+        
+        .contact-email:hover {
+            background: #0066DD;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #2C2C2E;
+        }
+        
+        .nav-links a {
+            color: #007AFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            color: #8E8E93;
+            font-size: 14px;
+        }
+        
+        .tip {
+            background: #1a2a1a;
+            border-left: 3px solid #34C759;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        
+        .tip p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <svg class="logo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1C1C1E"/>
+                        <stop offset="100%" style="stop-color:#000000"/>
+                    </linearGradient>
+                </defs>
+                <rect width="1024" height="1024" rx="230" fill="url(#bg)"/>
+                <g transform="translate(512, 480)">
+                    <rect x="-180" y="-20" width="360" height="280" rx="40" fill="#007AFF"/>
+                    <path d="M-110,-20 L-110,-120 A110,110 0 0,1 110,-120 L110,-20" 
+                          stroke="#007AFF" stroke-width="56" fill="none" stroke-linecap="round"/>
+                    <circle cx="0" cy="100" r="40" fill="#1C1C1E"/>
+                    <rect x="-20" y="100" width="40" height="70" rx="10" fill="#1C1C1E"/>
+                </g>
+            </svg>
+            <h1 class="app-name">Loxit</h1>
+            <p class="page-title">Support</p>
+        </header>
+        
+        <main>
+            <h2>Getting Started</h2>
+            <p>Loxit is designed to be simple. Add thoughts, check them off when done, and free your mind. Here's how to get the most out of it.</p>
+            
+            <h2>Quick Access Setup</h2>
+            <p>Capture thoughts instantly from anywhere on your iPhone:</p>
+            
+            <div class="setup-card">
+                <h3>
+                    <span class="setup-icon">🔒</span>
+                    Add to Lock Screen
+                </h3>
+                <ol>
+                    <li>Long-press your Lock Screen</li>
+                    <li>Tap <strong>Customize</strong></li>
+                    <li>Select <strong>Lock Screen</strong></li>
+                    <li>Tap <strong>Add Control</strong> (bottom of screen)</li>
+                    <li>Search for and add <strong>Loxit</strong></li>
+                </ol>
+            </div>
+            
+            <div class="setup-card">
+                <h3>
+                    <span class="setup-icon">⚙️</span>
+                    Add to Control Center
+                </h3>
+                <ol>
+                    <li>Open <strong>Settings</strong> → <strong>Control Center</strong></li>
+                    <li>Scroll down to find <strong>Loxit</strong></li>
+                    <li>Tap <strong>+</strong> to add</li>
+                </ol>
+                <p style="margin-top: 12px; margin-bottom: 0;"><em>Or:</em> Swipe down to open Control Center, tap <strong>+</strong>, and add Loxit directly.</p>
+            </div>
+            
+            <div class="setup-card">
+                <h3>
+                    <span class="setup-icon">📱</span>
+                    Home Screen Quick Action
+                </h3>
+                <ol>
+                    <li>Long-press the Loxit app icon on your Home Screen</li>
+                    <li>Tap <strong>"Remember..."</strong> to add a new item instantly</li>
+                </ol>
+            </div>
+            
+            <div class="tip">
+                <p><strong>Tip:</strong> For the fastest capture, add Loxit to your Lock Screen. You can add a thought without even unlocking your phone.</p>
+            </div>
+            
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I add a new item?</div>
+                <div class="faq-answer">Tap the <strong>+</strong> button in the top right corner of the app, or use any of the quick access methods above (Lock Screen, Control Center, or Home Screen long-press).</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I mark an item as complete?</div>
+                <div class="faq-answer">Tap the circle next to any item to mark it as complete. Tap again to undo.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I delete an item?</div>
+                <div class="faq-answer">Swipe left on any item and tap <strong>Delete</strong>, or swipe all the way left for a quick delete.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I delete all completed items?</div>
+                <div class="faq-answer">In the Completed section, tap <strong>Clear All</strong> to remove all completed items at once.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is my data backed up?</div>
+                <div class="faq-answer">Loxit stores all data locally on your device. If you have iCloud Backup enabled for your iPhone, your Loxit data will be included in your device backup. We do not have separate cloud sync.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I sync between devices?</div>
+                <div class="faq-answer">Currently, Loxit is designed as a single-device app with no cloud sync. This is intentional to keep your data private and the app simple. Your data stays on your device only.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Why can't I see Loxit in Control Center options?</div>
+                <div class="faq-answer">Control Center widgets require iOS 18 or later. Make sure your iPhone is updated to iOS 18+. If you've just installed the app, try restarting your iPhone.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">The widget isn't updating. What should I do?</div>
+                <div class="faq-answer">Widgets refresh periodically to save battery. Try opening the main app—this triggers an immediate widget refresh. If issues persist, remove and re-add the widget.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is my data private?</div>
+                <div class="faq-answer">Yes. Loxit collects no personal data, has no analytics, and stores everything locally on your device. We never see your reminders. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</div>
+            </div>
+            
+            <div class="contact-box">
+                <h2>Still need help?</h2>
+                <p>We're happy to assist with any questions or issues.</p>
+                <a href="mailto:support@example.com" class="contact-email">Contact Support</a>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="https://apps.apple.com/app/loxit/idXXXXXXXXXX">App Store</a>
+            </nav>
+        </main>
+        
+        <footer class="footer">
+            <p>© 2026 Loxit. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
